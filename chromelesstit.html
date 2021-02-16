@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <title>&nbsp; chromeless window 1.0 (title)</title>
+    <meta
+      name="Author"
+      content="(c) microbians.com / Gabriel Suchowolski / power[z]one - powerz@microbians.com"
+    />
+    <meta charset="utf-8" />
+    <style type="text/css">
+      #mywindowTITLE {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 22px;
+        z-index: 1;
+        background-color: #ffffff;
+        clip: rect(0, 100%, 22, 0);
+      }
+      #mywindow {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 22px;
+        z-index: 2;
+        clip: rect(0, 100%;22, 0);
+      }
+      #mywindowCLOSE {
+        position: absolute;
+        left: -22px;
+        top: -22px;
+        width: 11px;
+        height: 11px;
+        z-index: 3;
+        clip: rect(0, 11, 11, 0);
+      }
+    </style>
+    <script
+      language="javascript"
+      type="text/javascript"
+      src="js/pz_chromelesstit.js"
+    ></script>
+  </head>
+  <body
+    onload="init()"
+    TOPMARGIN="0"
+    LEFTMARGIN="0"
+    MARGINWIDTH="0"
+    MARGINHEIGHT="0"
+    scroll="no"
+    style="border: 1px solid #000000; overflow: hidden; margin: 0pt"
+    bgcolor="#ffffff"
+  >
+    <div id="mywindow"><img src=img/none.gif width=100% height=20></div>
+    <div id="mywindowTITLE"><img width="1" height="1" /></div>
+    <div id="mywindowCLOSE">
+      <img name=closewin src=img/none.gif border=0 width=11 height=11>
+    </div>
+  </body>
+</html>
